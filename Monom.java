@@ -1,5 +1,5 @@
 public class Monom {
 
-    char x;
-    int coeficient;
+    int exponent;
+    Double coeficient;
 }
