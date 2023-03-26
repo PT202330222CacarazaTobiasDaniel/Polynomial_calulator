@@ -89,7 +89,6 @@ public class Operatii {
         }
         Polynom impartire = new Polynom();
         Integer mDegree = p1.getMaxDegree();
-        int w = 0;
         while(rest.getMaxDegree() >= p2.getMaxDegree())
         {
             if(p2.getMaxDegree()<= rest.getMaxDegree()) {
@@ -105,7 +104,7 @@ public class Operatii {
 
             //mDegree--;
         }
-        Integer j[]= new Integer[50];
+        /*Integer j[]= new Integer[50];
         Integer q =0 ;
         for(Map.Entry<Integer,Double> i: rest.polinom.entrySet())
         {
@@ -120,7 +119,7 @@ public class Operatii {
         for(int i = 0; i<q;i++)
         {
             rest.removeMonom(j[i]);
-        }
+        }*/
         Polynom[] p = new Polynom[2];
         p[0] = impartire;
         p[1] = rest;
