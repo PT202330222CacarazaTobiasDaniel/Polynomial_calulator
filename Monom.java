@@ -1,7 +1,4 @@
-package org.example;
-
-import java.util.HashMap;
-import java.util.Map;
+package org.assigment1;
 
 public class Monom {
 

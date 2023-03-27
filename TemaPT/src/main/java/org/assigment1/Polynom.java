@@ -61,25 +61,7 @@ public class Polynom implements Comparable<Polynom>{
         }
     }
 
-    public void removeMonom(Monom mon)
-    {
-        this.polinom.remove(mon.exponent);
-        if( mon.exponent == maxDegree)
-        {
-            int j = maxDegree;
-            for(int i = j; i>=0;i--)
-            {
-                if(this.polinom.containsKey(i))
-                {
-                    if(this.polinom.get(i) < 1e-5)
-                    {
-                        //this.removeMonom(i);
-                    }
-                    maxDegree = i;
-                }
-            }
-        }
-    }
+
 
     public String toString()
     {

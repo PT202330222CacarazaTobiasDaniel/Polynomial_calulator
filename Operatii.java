@@ -1,4 +1,4 @@
-package org.example;
+package org.assigment1;
 
 import java.util.Map;
 
@@ -88,13 +88,13 @@ public class Operatii {
 
         }
         Polynom impartire = new Polynom();
-        Integer mDegree = p1.getMaxDegree();
+
         while(rest.getMaxDegree() >= p2.getMaxDegree())
         {
             if(p2.getMaxDegree()<= rest.getMaxDegree()) {
                     Monom m1 = new Monom();
-                    /*if(p2.polinom.containsKey(rest.getMaxDegree()))*/
-                        m1 = new Monom(rest.getMaxDegree() - p2.getMaxDegree(), rest.polinom.get(rest.getMaxDegree()) / p2.polinom.get(p2.getMaxDegree()));
+
+                    m1 = new Monom(rest.getMaxDegree() - p2.getMaxDegree(), rest.polinom.get(rest.getMaxDegree()) / p2.polinom.get(p2.getMaxDegree()));
 
                     impartire.adaugaMonom(m1);
                     Polynom s = op.inmultire(p2, new Polynom(m1));
@@ -102,24 +102,7 @@ public class Operatii {
 
             }
 
-            //mDegree--;
         }
-        /*Integer j[]= new Integer[50];
-        Integer q =0 ;
-        for(Map.Entry<Integer,Double> i: rest.polinom.entrySet())
-        {
-            if(i.getValue() < 1e-5)
-            {
-                j[q++]=i.getKey();
-            }
-            else
-                rest.adaugaMonom(i.getKey(),i.getValue());
-
-        }
-        for(int i = 0; i<q;i++)
-        {
-            rest.removeMonom(j[i]);
-        }*/
         Polynom[] p = new Polynom[2];
         p[0] = impartire;
         p[1] = rest;
@@ -162,7 +145,6 @@ public class Operatii {
                 integrare.adaugaMonom(ex+1,p1.polinom.get(ex)/(ex+1));
             }
         }
-        //integrare.adaugaMonom(0,'c');
         return integrare;
     }
 }

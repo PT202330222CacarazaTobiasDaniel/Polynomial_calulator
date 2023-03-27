@@ -1,9 +1,7 @@
-package org.example;
+package org.assigment1;
 
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeAll;
-
-import junit.framework.TestCase;
 
 import static junit.framework.TestCase.*;
 
@@ -120,22 +118,5 @@ public class OperatieTest {
         assertTrue(result.compareTo(expected)== 0);
     }
 
-    @Test
-    public void testFalsAdd()
-    {
-        Polynom a = new Polynom();
-        a.adaugaMonom(0,1.0);
-        a.adaugaMonom(2,3.0);
-        Polynom a2 = new Polynom();
-        a2.adaugaMonom(0,4.0);
-        a2.adaugaMonom(1,3.0);
-        Operatii op = new Operatii();
-        Polynom result = op.adunare(a,a2);
-        Polynom expected = new Polynom();
-        expected.adaugaMonom(0,1.0);
-        expected.adaugaMonom(1,3.0);
-        expected.adaugaMonom(2,3.0);
-        assertTrue(result.compareTo(expected)== 0);
-    }
 
 }

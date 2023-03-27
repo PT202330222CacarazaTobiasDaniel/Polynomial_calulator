@@ -1,11 +1,11 @@
-package org.example;
+package org.assigment1;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        Polynom a = new Polynom();
+        /*Polynom a = new Polynom();
         a.adaugaMonom(0,10.0);
         a.adaugaMonom(3,5.0);
         a.adaugaMonom(2,1.0);
@@ -46,31 +46,8 @@ public class Main {
         System.out.println(der);
         System.out.println(integr);
         System.out.println(p[0].toString());
-        System.out.println(p[1].toString());
-        ///la scadere
-        /*
-        Pattern pattern = Pattern.compile("\\+?-?([0-9]?x\\^[0-9])");
+        System.out.println(p[1].toString());*/
+        new Interfata().setVisible(true);
 
-        Polynom text = new Polynom();
-        Polynom text2 = new Polynom();
-        Matcher matcher = pattern.matcher(jTextField2.getText());
-        while(matcher.find()) {
-            String c = matcher.group(0);
-            //String c2 = matcher.group(1);
-            //System.out.println(""+" "+c.substring(0,2)+"  "+c.substring(4)+" ");
-            if(!c.isEmpty())
-                text.adaugaMonom(Integer.parseInt(c.substring(4)),Double.parseDouble(c.substring(0,2)));
-        }
-        Pattern pattern2 = Pattern.compile("\\+?-?([0-9]?x\\^[0-9])");
-
-        Matcher matcher2 = pattern2.matcher(jTextField1.getText());
-        while(matcher2.find()) {
-            String c = matcher2.group(0);
-            //System.out.println(""+c+" ");
-            if(!c.isEmpty())
-                text2.adaugaMonom(Integer.parseInt(c.substring(4)),Double.parseDouble(c.substring(0,2)));
-        }
-        Operatii op = new Operatii();
-        jTextArea1.setText(op.scadere(text,text2).toString());*/
     }
 }

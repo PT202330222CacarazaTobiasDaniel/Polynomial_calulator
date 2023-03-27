@@ -156,7 +156,7 @@ public class Interfata extends JFrame {
     }
 
     private void adunareActionPerformed(java.awt.event.ActionEvent evt) {
-        Pattern pattern = Pattern.compile("(\\+?-?[0-9]+)x\\^([0-9]+)");
+        Pattern pattern = Pattern.compile("(\\+?-?[0-9]+)x|X\\^([0-9]+)");
 
         Polynom t = new Polynom();
         Polynom t2 = new Polynom();

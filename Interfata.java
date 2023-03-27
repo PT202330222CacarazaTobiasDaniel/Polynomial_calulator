@@ -1,18 +1,18 @@
-package org.example;
+package org.assigment1;
 
 import javax.swing.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-public class tema1 extends JFrame {
+public class Interfata extends JFrame {
 
 
-    public tema1() {
-        initComponents();
+    public Interfata() {
+        initializare();
     }
 
-    private void initComponents() {
+    private void initializare() {
 
         jPanel1 = new JPanel();
         Text2 = new JTextField();
@@ -27,6 +27,7 @@ public class tema1 extends JFrame {
         resultat = new JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
 
         Text2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -155,7 +156,7 @@ public class tema1 extends JFrame {
     }
 
     private void adunareActionPerformed(java.awt.event.ActionEvent evt) {
-        Pattern pattern = Pattern.compile("(\\+?-?[0-9]+)x\\^([0-9]+)");
+        Pattern pattern = Pattern.compile("(\\+?-?[0-9]+)x|X\\^([0-9]+)");
 
         Polynom t = new Polynom();
         Polynom t2 = new Polynom();
@@ -287,12 +288,7 @@ public class tema1 extends JFrame {
 
     }
     public static void main(String args[]) {
-
-
-
-                new tema1().setVisible(true);
-
-
+        new Interfata().setVisible(true);
     }
 
 
