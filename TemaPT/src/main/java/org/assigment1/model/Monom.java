@@ -1,4 +1,4 @@
-package org.assigment1;
+package org.assigment1.model;
 
 public class Monom {
 

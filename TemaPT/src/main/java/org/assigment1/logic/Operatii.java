@@ -1,4 +1,7 @@
-package org.assigment1;
+package org.assigment1.logic;
+
+import org.assigment1.model.Monom;
+import org.assigment1.model.Polynom;
 
 import java.util.Map;
 

@@ -1,4 +1,4 @@
-package org.assigment1;
+package org.assigment1.model;
 
 import java.util.HashMap;
 import java.util.Map;

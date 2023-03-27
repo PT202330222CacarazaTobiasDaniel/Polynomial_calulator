@@ -1,5 +1,7 @@
 package org.assigment1;
 
+import org.assigment1.logic.Operatii;
+import org.assigment1.model.Polynom;
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeAll;
 

@@ -1,4 +1,7 @@
-package org.assigment1;
+package org.assigment1.interfata;
+
+import org.assigment1.model.Polynom;
+import org.assigment1.logic.Operatii;
 
 import javax.swing.*;
 import java.util.regex.Matcher;
@@ -156,7 +159,7 @@ public class Interfata extends JFrame {
     }
 
     private void adunareActionPerformed(java.awt.event.ActionEvent evt) {
-        Pattern pattern = Pattern.compile("(\\+?-?[0-9]+)x|X\\^([0-9]+)");
+        Pattern pattern = Pattern.compile("(\\+?-?[0-9]+)x\\^([0-9]+)");
 
         Polynom t = new Polynom();
         Polynom t2 = new Polynom();
